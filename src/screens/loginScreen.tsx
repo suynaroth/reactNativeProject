@@ -72,7 +72,7 @@ export default function LoginScreen({ navigation }: Props) {
 
           {/* Links */}
           <TouchableOpacity>
-            <Text style={styles.link}>Forgot Password?</Text>
+            <Text onPress={() => navigation.navigate("ResetPW")} style={styles.link}>Forgot Password?</Text>
           </TouchableOpacity>
           <TouchableOpacity>
             <Text onPress={() => navigation.navigate("SignUp")} style={styles.link}>Create an Account</Text>
